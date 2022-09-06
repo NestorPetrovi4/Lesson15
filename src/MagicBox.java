@@ -20,7 +20,7 @@ public class MagicBox<T> {
     public T pick() {
         for (int i = 0; i < items.length; i++) {
             if (items[i] == null) {
-                throw new RuntimeException("Коробка заполнена не полностью осталось свободно " + (items.length - i + 1) + " ячейки");
+                throw new RuntimeException("Коробка заполнена не полностью осталось свободно " + (items.length - i) + " ячейки");
             }
         }
         Random random = new Random();
